@@ -1,0 +1,25 @@
+<!--Practice 2: Changing CSS-->
+<!--Text field accept RGB for paragraph, border, control width of border too-->
+
+<html>
+    <link href="style.css" rel="stylesheet">
+    <h1>Practice 2</h1>
+    <body>
+        <div id="paragraph">
+            The paragraph to be altered
+        </div>
+        <script type="text/javascript" src="functions.js"></script>
+        Choose an element to alter color: <select name="element" id="element">
+            <option value="border">Border</option>
+            <option value="background">Background</option>
+            <option value="text">Text</option>
+        </select><br>
+        R: <input type="text" id="red_input" name="red_input"><br>
+        G: <input type="text" id="green_input" name="green_input"><br>
+        B: <input type="text" id="blue_input" name="blue_input"><br>
+        <br>
+        Border Width: <input type="number" id="border_width_input" name="border_width_input"><br>
+        <br>
+        <button onclick="alert_change_color()">Apply changes</button>
+    </body>
+</html>
